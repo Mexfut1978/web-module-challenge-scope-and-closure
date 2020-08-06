@@ -52,13 +52,25 @@ function counter2() {
 }
 
 
+// Answer
+
+// "Counter1 code" depicts the best example of a closure. A closure is the combination of a function
+//  bundled together (enclosed) with references to its surrounding state (the lexical environment). 
+//  In other words, a closure gives you access to an outer function's scope from an inner function.
+//  Whereas, "counter2 code" dispplays a variable in the global scope and a declarative function. 
+//  (There is not a secondary functions enclosed within the first function).
+//  The preffered function syntax will be counter1 code. It enables the user to invoke the function
+//  without the need of having a variable outside within the global scope. It is also best practice
+//  in the industry. 
+//  In JavaScript, closures are created every time a function is created, at function creation time.
+
 /* Task 2: inning() 
 
 Write a function called `inning` that returns a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
 
-function inning(/*Code Here*/){
+function inning(){
 
-    /*Code Here*/
+  return () => Math.floor(Math.random() * Math.floor(5));
 
 }
 
